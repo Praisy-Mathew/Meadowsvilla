@@ -1,0 +1,1714 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Title -->
+    <title>The Meadows Villa By ABBA</title>
+    <!-- Favicon Icon -->
+    <link rel="shortcut icon" href="assets/images/meadows.png"
+        type="image/x-icon">
+
+    <!-- Flaticon -->
+    <link rel="stylesheet" href="assets/css/flaticon.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="assets/css/fontawesome-5.14.0.min.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
+    <!-- Nice Select -->
+    <link rel="stylesheet" href="assets/css/nice-select.min.css">
+    <!-- Type Writer -->
+    <link rel="stylesheet" href="assets/css/jquery.animatedheadline.css">
+    <!-- Animate -->
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <!-- Slick -->
+    <link rel="stylesheet" href="assets/css/slick.min.css">
+    <!-- Main Style -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <style>
+      html, body {
+  overflow-x: hidden;
+}
+        .room-item .image {
+            overflow: hidden;
+            position: relative;
+        }
+
+        .room-item .image img {
+            width: 100%;
+            transition: transform 0.4s ease-in-out;
+        }
+
+        .room-item .image:hover img {
+            transform: scale(1.1);
+        }
+
+        .feature-item h4 {
+            display: inline-block;
+            position: relative;
+            transition: color 0.3s ease-in-out;
+        }
+
+        /* Underline effect on hover */
+        .feature-item h4::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            width: 100%;
+            height: 2px;
+            background-color: #ffd700;
+            /* Gold color */
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .feature-item:hover h4 {
+            color: #ffd700;
+            /* Gold color change on hover */
+        }
+
+        .feature-item:hover h4::after {
+            transform: scaleX(1);
+            transform-origin: left;
+        }
+
+        /* Fade-in effect on description */
+        .feature-item p {
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .feature-item:hover p {
+            opacity: 0.7;
+        }
+
+        .feature-item h4 {
+            display: inline-block;
+            transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+        }
+
+        .feature-item:hover h4 {
+            transform: scale(1.1);
+            /* Slightly enlarges the text */
+            /* Change color on hover */
+        }
+
+        .tariff-details {
+            padding: 20px 50px;
+            /* Adds space at the top and bottom */
+            margin-top: 0px;
+            margin-bottom: 25px;
+        }
+
+        .blog-grid-item {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.4s, box-shadow 0.4s;
+            background: white;
+            text-align: center;
+        }
+
+        .blog-grid-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .image img {
+            width: 120%;
+            height: 220px;
+            object-fit: cover;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .blog-content {
+            padding: 15px;
+        }
+
+        .blog-content h4 {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .blog-content p {
+            margin-bottom: 10px;
+            font-size: 16px;
+            color: #555;
+        }
+
+        .form-group input {
+            background-color: black;
+            /* Match other input fields */
+            border: .1px solid #ccc;
+            padding: 10px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .form-group input, 
+        .form-group textarea, 
+        .dropdown-btn {
+            background-color: black;
+            color: white;
+            border: 1px solid #ccc;
+            padding: 10px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+    
+        .dropdown-container {
+    background-color:black !important;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 100%;
+    max-height: 200px; /* Set max height for scroll */
+    overflow-y: auto; /* Enable scroll when content overflows */
+    background: #fff;
+    border-radius: 5px;
+}
+
+/* Style for each checkbox option */
+.dropdown-container div {
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+}
+
+/* Style checkboxes */
+.dropdown-container input[type="checkbox"] {
+    margin-right: 8px;
+    transform: scale(1.1); /* Slightly larger checkboxes */
+}
+
+/* Hover effect */
+.dropdown-container div:hover {
+    background: white;
+    border-radius: 3px;
+}
+    .blog-grid-item h4 {
+        color: #367755 !important; /* Change to any desired color */
+    }
+     @media (max-width: 768px){
+    .mobile-logo img {
+        height: 80px; 
+    }  
+
+    .menu-sidebar .theme-btn {
+        font-size: 12px; /* Reduce text size */
+        line-height: 1.2;
+    }
+}
+.blog-grid-item {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(40, 167, 69, 0.4);
+            transition: transform 0.4s, box-shadow 0.4s;
+            background: white;
+            text-align: center;
+            align-items: center; /* horizontally center content */
+            justify-content: center; /* vertically center content if height is set */
+            border: 2px solid #367755; /* ✅ Green border on hover */
+        }
+        
+
+        .blog-grid-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+            border: 2px solid white; /* ✅ Green border on hover */
+        }
+        .image img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .blog-content {
+            padding: 15px;
+        }
+        .blog-content h4 {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .blog-content p {
+            margin-bottom: 10px;
+            font-size: 16px;
+            color: #555;
+        }
+        .blog-grid-item {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.4s, box-shadow 0.4s;
+            background: white;
+            text-align: center;
+        }
+        .blog-grid-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+        }
+        .image img {
+            width: 250px;
+            height: 300px;
+            object-fit: cover;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .blog-content {
+            padding: 15px;
+        }
+        .blog-content h4 {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .blog-content p {
+            margin-bottom: 10px;
+            font-size: 16px;
+            color: #555;
+        }
+        .form-group input {
+    background-color: black; /* Match other input fields */
+    border: .1px solid #ccc;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.blog-grid-item h4 {
+        color: #367755 !important; /* Change to any desired color */
+    }
+    .gallery-wrapper {
+      padding: 50px ;  
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .main-image-container {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 70%;
+      height: 70%;
+    }
+
+    .main-image {
+      width: 100%;
+      max-height: 600px;
+      object-fit: contain;
+      border-radius: 10px;
+    }
+
+/* 📱 Mobile responsiveness */
+@media (max-width: 768px) {
+  .main-image-container {
+    width: 100%;
+  }
+
+  .main-image {
+    max-height: 500px; /* or adjust based on your needs */
+  }
+}
+    .nav-button {
+      position: fixed;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(0, 0, 0, 0.7);
+      color: white;
+      font-size: 32px;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      z-index: 2;
+      border-radius: 5px;
+    }
+
+    .nav-button.left {
+      left: -60px;
+    }
+
+    .nav-button.right {
+      right: -60px;
+    }
+
+    .thumbnail-strip {
+      display:flex;
+      overflow-x: auto;
+      margin-top: 20px;
+      padding: 10px;
+      width: 90%;
+      gap: 10px;
+    }
+
+    .thumbnail-strip img {
+      height: 80px;
+      cursor: pointer;
+      border: 2px solid transparent;
+      border-radius: 5px;
+      transition: border 0.2s;
+    }
+
+    .thumbnail-strip img.active {
+      border: 2px solid #007bff;
+    }
+
+    /* Scrollbar styling (optional) */
+    .thumbnail-strip::-webkit-scrollbar {
+      height: 8px;
+    }
+
+    .thumbnail-strip::-webkit-scrollbar-thumb {
+      background: #aaa;
+      border-radius: 4px;
+    }
+    .contact-icons {
+  display: flex;
+  justify-content:center;
+  gap: 30px;
+  margin-top:0px;
+  flex-wrap: wrap;
+}
+
+.contact-icon {
+  text-align: center;
+}
+
+.icon-circle {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(to right, #7CB55A, white); 
+  border-radius:15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #61A840;
+  font-size: 22px;
+  margin: 0 auto 10px auto;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+.icon-circle:hover {
+  transform: scale(1.1);
+}
+@media (max-width: 600px) {
+  .contact-icons {
+    gap: 20px;
+  }
+  .icon-circle {
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+  }
+}
+/* Default header background - black */
+.main-header,
+.navbar-header,
+.main-header .navbar-header,
+.main-header .header-upper {
+    background-color: white !important;
+}
+
+/* Default desktop text - white */
+@media (min-width: 992px) {
+    .main-header .navigation > li > a {
+        color: #772b21 !important;
+    }
+
+    .main-header .navigation > li.active > a,
+    .main-header .navigation > li > a:hover {
+        color: #cccccc !important;
+    }
+
+    .navbar-toggle .icon-bar,
+    .main-header .navbar-toggle .icon-bar {
+        background-color: #ffffff !important;
+    }
+}
+
+/* Default mobile text - black */
+@media (max-width: 991px) {
+    .main-header .navbar-collapse .navigation li a {
+        color: #000000 !important;
+    }
+
+    .main-header .navbar-collapse .navigation li a:hover {
+        color: #333333 !important;
+    }
+
+    .navbar-toggle .icon-bar,
+    .main-header .navbar-toggle .icon-bar {
+        background-color: #772b21 !important;
+    }
+}
+
+/* Scrolled / fixed header - white background, brown text */
+.main-header.fixed-header,
+.main-header.fixed-header .header-upper,
+.main-header.fixed-header .navbar-header,
+.main-header.fixed-header .navbar-collapse,
+.main-header.fixed-header .nav-outer {
+    background-color: #ffffff !important;
+}
+
+.main-header.fixed-header .navigation > li > a,
+.main-header.fixed-header .navbar-collapse .navigation li a {
+    color: #772b21 !important;
+}
+
+.main-header.fixed-header .navigation > li.active > a,
+.main-header.fixed-header .navigation > li > a:hover,
+.main-header.fixed-header .navbar-collapse .navigation li a:hover {
+    color: #772b21 !important;
+}
+
+.main-header.fixed-header .navbar-toggle .icon-bar {
+    background-color: #772b21 !important;
+}
+
+
+
+
+
+
+
+    </style>
+</head>
+
+<body class="home-one">
+    <div class="page-wrapper">
+
+        <!-- Preloader -->
+        <div class="preloader"></div>
+
+        <!-- main header -->
+        <header class="main-header header-white">
+            <!--Header-Upper-->
+            <div class="header-upper">
+                <div class="container container-1720 clearfix">
+
+                    <div class="header-inner rel d-flex align-items-center">
+                        <div class="logo-outer">
+                            <div class="logo"><a href="index.html"><img
+                                        src="assets/images/meadows.png" style="height: 120px;"></a></div>
+                        </div>
+
+                        <div class="nav-outer clearfix me-auto">
+                            <!-- Main Menu -->
+                            <nav class="main-menu navbar-expand-lg">
+                                <div class="navbar-header">
+                                    <div class="mobile-logo my-15">
+                                        <a href="index.html">
+                                            <img src="assets/images/meadows.png"
+                                                alt="Logo" title="Logo">
+                                        </a>
+                                    </div>
+
+                                    <!-- Toggle Button -->
+                                    <button type="button" class="navbar-toggle" data-bs-toggle="collapse"
+                                        data-bs-target=".navbar-collapse">
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                </div>
+
+                                <div class="navbar-collapse collapse clearfix">
+                                    <ul class="navigation clearfix">
+                                        <li class="active"><a href="index.html">Home</a></li>
+                                        <li><a href="about.html">About us</a></li>
+                                        <!-- <li><a href="room-list.html">Rooms</a></li> -->
+                                        <li><a href="near.html">Nearby Attractions</a></li>
+                                        <li><a href="contact.html">Contact</a></li>
+                                    </ul>
+                                </div>
+
+                            </nav>
+                            <!-- Main Menu End-->
+                        </div>
+                        <!-- <div class="menu-sidebar">
+                            <a class="theme-btn">Book Now <i class="far fa-angle-right"></i></a>
+                        </div> -->
+
+
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Hidden Sidebar -->
+        <section class="hidden-bar">
+            <div class="inner-box text-center">
+                <div class="cross-icon"><span class="fa fa-times"></span></div>
+                <div class="title">
+                    <h4>Get Appointment</h4>
+                </div>
+
+                <!--Appointment Form-->
+                <div class="appointment-form">
+                    <form method="post" action="contact.html">
+                        <div class="form-group">
+                            <input type="text" name="name" value="" placeholder="Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" value="" placeholder="Email Address" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" name="phone" value="" placeholder="Phone Number" required>
+                        </div>
+
+                        <!-- Room Selection -->
+                        <div class="form-group">
+                            <label>Select Rooms:</label>
+                            <div class="dropdown">
+                                <button class="dropdown-btn" onclick="toggleDropdown()">Select Rooms</button>
+                                <div class="dropdown-content" id="dropdownMenu">
+                                    <label><input type="checkbox" value="AC" onchange="updateSelection()"> AC Room</label>
+                                    <label><input type="checkbox" value="Non-AC" onchange="updateSelection()"> Non-AC Room</label>
+                                    <label><input type="checkbox" value="VIP" onchange="updateSelection()"> VIP Room</label>
+                                    <label><input type="checkbox" value="Deluxe" onchange="updateSelection()"> Deluxe Room</label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Date Selection -->
+                        <div class="form-group">
+                            <label for="appointment_date">Select Appointment Date:</label>
+                            <input type="date" name="appointment_date" id="appointment_date" required>
+                        </div>
+
+
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Message" rows="5"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <button type="submit" class="theme-btn">Submit now</button>
+                        </div>
+                        <div id="successMessage" style="display: none; color: green; font-weight: bold; margin-top: 10px;">
+                            Thank you! We will contact you shortly.
+                        </div>
+                    </form>
+                </div>
+
+                <!--Social Icons-->
+                <div class="social-style-one">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fas fa-envelope"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+        </section>
+        <!--End Hidden Sidebar -->
+
+        <!-- Slider Section Start -->
+        <section class="main-slider-area rel z-1" style="text-align: center;">
+            <img src="assets/images/home.jpg" alt="Meadows Villa" style="width: 100%; height: auto; display: block; padding-top: 20px;">
+            <div class="slider-shapes" style="padding-top: 25px;">
+                <div class="contact-icons">
+                    <div class="contact-icon">
+                        <a href="tel:+917293516434" target="_blank">
+                          <div class="icon-circle"><i class="fas fa-phone-alt"></i></div>
+                          <p>Call</p>
+                        </a>
+                      </div>
+                      
+                      <div class="contact-icon">
+                        <a href="https://wa.me/7293516434" target="_blank">
+                          <div class="icon-circle"><i class="fab fa-whatsapp"></i></div>
+                          <p>WhatsApp</p>
+                        </a>
+                      </div>
+                      
+                      <div class="contact-icon">
+                        <a href="https://goo.gl/maps/cMycFtRJaASbVWSy8?g_st=aw" target="_blank">
+                          <div class="icon-circle"><i class="fas fa-map-marker-alt"></i></div>
+                          <p>Direction</p>
+                        </a>
+                      </div>
+                      
+                      <div class="contact-icon">
+                        <a href="mailto:info@themeadowsvilla.com" target="_blank">
+                          <div class="icon-circle"><i class="fas fa-envelope"></i></div>
+                          <p>Mail</p>
+                        </a>
+                      </div>
+                      
+                  </div>
+                  </div>
+        </section> 
+        <style>
+            .main-slider-img {
+    width: 100%;
+    height: 1000px; /* Full height of the screen by default */
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+    .main-slider-img {
+        height: 700px; /* Adjust for smaller screens */
+    }
+}
+
+/* Extra small devices (optional) */
+@media (max-width: 480px) {
+    .main-slider-img {
+        height: 700px;
+    }
+}
+.villa-features-bg::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background: 
+        linear-gradient(-45deg, #e0f3e0 25%, transparent 25%), 
+        linear-gradient(45deg, #e0f3e0 25%, transparent 25%);
+    background-size: 40px 40px;
+    background-repeat: repeat-x;
+    z-index: 2;
+}
+.zigzag-section {
+  background-color: #e0f3e0; /* light green, just like in image */
+  padding: 60px 20px;
+  clip-path: polygon(
+    0 40px,
+    10% 0,
+    20% 40px,
+    30% 0,
+    40% 40px,
+    50% 0,
+    60% 40px,
+    70% 0,
+    80% 40px,
+    90% 0,
+    100% 40px,
+    100% 100%,
+    0 100%
+  );
+  color:#61A538 ;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+
+        </style>
+
+        <!-- About Area start -->
+        <section class="about-area pt-130 rpt-100 rel">
+            <div class="container">
+                <div class="row align-items-center">
+                    <!-- <div class="col-lg-6">
+                        <div class="about-image-part rmb-55">
+                            <div class="top-part">
+                                <img src="assets/images/WhatsApp Image 2025-03-14 at 3.42.45 PM (2).jpeg" alt="About">
+                                <div class="icon wow fadeInLeft delay-0-2s"><i class="flaticon-hotel"></i></div>
+                            </div>
+                            <div class="bottom-part">
+                               
+
+
+                                <a href="about.html" class="wow fadeInRight delay-0-2s">
+                                    <div class="icon wow fadeInLeft delay-0-2s"><i class="flaticon-hotel"></i></div>
+                                    <span><b>Explore More</b><br></span>
+                                </a>
+
+                                <img src="assets/images/WhatsApp Image 2025-03-14 at 3.42.45 PM (2).jpeg" alt="About">
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="col-lg-12">
+                        <div class="about-content-part">
+                            <div class="section-title mb-35 wow fadeInUp delay-0-2s">
+                                <h2 style="color:#61A538">The Meadows Villa By ABBA</h2>
+                                <p>A premium fully furnished Serviced Villa, offering a private and luxurious stay for
+                                    VIP guests,
+                                    business executives, and pilgrims traveling to Sabarimala, ideally located near
+                                    Ranni
+                                    Perumpuzha Bus Station, this executive retreat ensures a peaceful, comfortable, and
+                                    secure
+                                    stay.</p>
+                            </div>
+                            <div class="feature-list wow fadeInUp delay-0-3s">
+                                <div class="feature-item">
+                                    <div class="icon">
+                                        <i class="flaticon-check-mark"></i>
+                                    </div>
+                                    <div class="content">
+                                        <h5 style="color:#61A538">Trusted Partners</h5>
+                                        <p>Building trust, delivering excellence.</p>
+                                    </div>
+                                </div>
+                                <div class="feature-item">
+                                    <div class="icon">
+                                        <i class="flaticon-check-mark"></i>
+                                    </div>
+                                    <div class="content">
+                                        <h5 style="color:#61A538">Luxury Services</h5>
+                                        <p>Experience comfort with a touch of luxury.</p>
+                                    </div>
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-lines for-bg-white">
+                <span></span><span></span>
+                <span></span><span></span>
+                <span></span><span></span>
+                <span></span><span></span>
+                <span></span><span></span>
+            </div>
+        </section>
+        <!-- About Area end -->
+
+
+        <!-- Rooms Area start -->
+        <section class="rooms-area pt-130 rpt-100 pb-1300 rpb-70 rel z-2 ">
+            <div class="container">
+                <div class="row justify-content-between align-items-center pb-20">
+                    <div class="col-xl-5 col-lg-7">
+                        <div class="section-title mb-40 wow fadeInLeft delay-0-2s">
+                            <h2>Comfort & Luxury in Our Exclusive Stay</h2>
+                        </div>
+                    </div>
+                    <!-- <div class="col-lg-4 text-lg-end">
+                        <a class="theme-btn mb-40 wow fadeInRight delay-0-2s" href="room-list.html">Explore More Rooms
+                            <i class="fal fa-angle-right"></i></a>
+                    </div> -->
+                </div>
+                <div class="row">
+                    <!-- Deluxe AC Room 1 -->
+                    <!-- Perunthenaruvi Waterfalls -->
+                    <!-- <div class="col-xl-6 col-md-6">
+                        <div class="blog-grid-item wow fadeInUp delay-0-4s">
+                            <div class="blog-content">
+                                <h3 style="color:#367755">BEDROOM </h3>
+                            </div>
+                            <div class="image">
+                                <img src="assets/images/04.jpg"
+                                    alt="Perunthenaruvi Waterfalls">
+                                    <a href="https://wa.me/7293516434?text=I'm%20interested%20in%20your%20BEDROOM%20space.%20Please%20share%20more%20details." target="_blank" class="btn btn-success mt-3" style="display: inline-block; padding: 5px 10px; background-color: #367755; color: white; border-radius: 5px; text-decoration:italic; margin-bottom: 10px;">
+                                        Enquire Now
+                                    </a>    
+                            </div>
+                           
+                        </div>
+                    </div> -->
+                    <!-- <div class="col-xl-6 col-md-6">
+                        <div class="blog-grid-item wow fadeInUp delay-0-4s">
+                            <div class="blog-content">
+                                <h3 style="color:#367755">BEDROOM </h3>
+                            </div>
+                            <div class="image">
+                                <img src="assets/images/IMG_5412.PNG"
+                                    alt="Perunthenaruvi Waterfalls">
+                                    <a href="https://wa.me/7293516434?text=I'm%20interested%20in%20your%20BEDROOM2%20space.%20Please%20share%20more%20details." target="_blank" class="btn btn-success mt-3" style="display: inline-block; padding: 5px 10px; background-color: #367755; color: white; border-radius: 5px; text-decoration:italic; margin-bottom: 10px;">
+                                        Enquire Now
+                                    </a>       
+                            </div>
+                            
+                        </div>
+                    </div> -->
+                    <!-- <div class="col-xl-6 col-md-6">
+                        <div class="blog-grid-item wow fadeInUp delay-0-4s">
+                            <div class="blog-content">
+                                <h3 style="color:#367755">BEDROOM 3</h3>
+                            </div>
+                            <div class="image">
+                                <img src="assets/images/IMG_5425.PNG"
+                                    alt="Perunthenaruvi Waterfalls">
+                                    <a href="https://wa.me/7293516434?text=I'm%20interested%20in%20your%20BEDROOM3%20space.%20Please%20share%20more%20details." target="_blank" class="btn btn-success mt-3" style="display: inline-block; padding: 5px 10px; background-color: #367755; color: white; border-radius: 5px; text-decoration:italic; margin-bottom: 10px;">
+                                        Enquire Now
+                                    </a>       
+                            </div>
+                            
+                        </div>
+                    </div> -->
+                    <div class="col-xl-6 col-md-6">
+                        <div class="blog-grid-item wow fadeInUp delay-0-4s">
+                            <div class="blog-content">
+                                <h3 style="color:#61A538">LIVING ROOM</h3>
+                            </div>
+                            <div class="image">
+                                <img src="assets/images/03.jpg"
+                                    alt="Perunthenaruvi Waterfalls">
+                                    <a href="https://wa.me/7293516434?text=I'm%20interested%20in%20your%20LIVING ROOM%20space.%20Please%20share%20more%20details." target="_blank" class="btn btn-success mt-3" style="display: inline-block; padding: 5px 10px; background-color: #61A538; color: white; border-radius: 5px; text-decoration:italic; margin-bottom: 10px;">
+                                        Enquire Now
+                                    </a>        
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-md-6">
+                        <div class="blog-grid-item wow fadeInUp delay-0-4s">
+                            <div class="blog-content">
+                                <h3 style="color:#61A538">DINING AREA</h3>
+                            </div>
+                            <div class="image">
+                                <img src="assets/images/01.jpg"
+                                    alt="Perunthenaruvi Waterfalls">
+                                    <a href="https://wa.me/7293516434?text=I'm%20interested%20in%20your%20DINING AREA%20space.%20Please%20share%20more%20details." target="_blank" class="btn btn-success mt-3" style="display: inline-block; padding: 5px 10px; background-color: #61A538; color: white; border-radius: 5px; text-decoration:italic; margin-bottom: 10px;">
+                                        Enquire Now
+                                    </a>    
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-md-6">
+                        <div class="blog-grid-item wow fadeInUp delay-0-4s">
+                            <div class="blog-content">
+                                <h3 style="color:#61A538">BEDROOM </h3>
+                            </div>
+                            <div class="image">
+                                <img src="assets/images/04.jpg"
+                                    alt="Perunthenaruvi Waterfalls">
+                                    <a href="https://wa.me/7293516434?text=I'm%20interested%20in%20your%20BEDROOM%20space.%20Please%20share%20more%20details." target="_blank" class="btn btn-success mt-3" style="display: inline-block; padding: 5px 10px; background-color:#61A538 ; color: white; border-radius: 5px; text-decoration:italic; margin-bottom: 10px;">
+                                        Enquire Now
+                                    </a>    
+                            </div>
+                           
+                        </div>
+                    </div>
+                    
+
+                    
+                </div>
+            </div>
+            <div class="bg-lines for-bg-white">
+                <span></span><span></span>
+                <span></span><span></span>
+                <span></span><span></span>
+                <span></span><span></span>
+                <span></span><span></span>
+            </div>
+        </section>
+
+        <!-- Rooms Area end -->
+
+
+        <!-- <div class="for-bg-and-shapes rel z-1" style="background-color:white;">  -->
+<style>
+    .wave-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 2;
+}
+
+.wave-top svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 100px;
+}
+.wave-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    line-height: 0;
+    z-index: 2;
+}
+
+.wave-top svg {
+    width: 100%;
+    height: 100px;
+    display: block;
+}
+
+.wave-left, .wave-right {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100px;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.wave-left {
+    left: 0;
+    transform: rotate(180deg);
+}
+
+.wave-right {
+    right: 0;
+}
+
+.wave-left svg,
+.wave-right svg {
+    height: 100%;
+    width: 100px;
+    display: block;
+}
+.features-area {
+    position: relative;
+    padding-top: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+    z-index: 1;
+    color:#000000 !important;
+    background:linear-gradient(#8BE158,#A7DF62,#00AD15);
+}
+.wave-bottom {
+    position: relative;
+    width: 150%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 2;
+}
+
+.wave-bottom svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 100px;
+}
+.feature-item .content h4 {
+  color: white; /* Bootstrap green or use your preferred shade */
+}
+
+.feature-item .content p {
+  color: black;
+}
+
+            
+        
+
+    @media (max-width: 767px) {
+  .features-area .feature-item {
+    text-align: center !important;
+    margin-bottom: 30px !important;
+  }
+
+  .features-area .feature-item .content h4,
+  .features-area .feature-item .content p {
+    text-align: center !important;
+  }
+
+  .features-area .col-md-6 {
+    display: flex;
+    justify-content: center;
+  }
+}
+</style>
+<style>
+    .main-hero {
+      position: relative;
+      overflow: hidden;
+      background-color: #d2f4b4;
+    }
+  
+    .wave-pattern {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1;
+    }
+  
+    .hero-description {
+      position: relative;
+      z-index: 2;
+      padding: 50px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      background: transparent;
+    }
+  
+    .highlight-feature {
+     background-color: white; 
+     box-shadow: 0 4px 12px rgba(100, 30, 30, 0.1); 
+     border-radius: 10px; 
+     padding: 20px;
+    width: 350px;
+    max-width: 100%;         /* Important for mobile responsiveness */
+    box-sizing: border-box;  /* Prevents padding from overflowing width */
+    }
+   
+  
+    .highlight-feature h4 {
+      margin: 0 0 10px;
+      font-size: 20px;
+      color: #61A538;
+    }
+  
+    .highlight-feature p {
+      font-size: 14px;
+      color: black;
+      line-height: 1.5;
+    }
+  </style>
+  
+    <!-- Hero Section -->
+    <section class="main-hero">
+      <!-- Decorative Waves -->
+      <svg class="wave-pattern" viewBox="0 0 1440 320" height="520" preserveAspectRatio="none">
+        <path fill="#e4fdd6" height="720" d="M0,96L60,117.3C120,139,240,181,360,192C480,203,600,181,720,149.3C840,117,960,75,1080,58.7C1200,43,1320,53,1380,58.7L1440,64L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
+        <path fill="#d4f4b5" height="500" d="M0,192L60,176C120,160,240,128,360,112C480,96,600,96,720,112C840,128,960,160,1080,181.3C1200,203,1320,213,1380,218.7L1440,224L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
+        <path fill="#c2ec9f" height="300" d="M0,160L60,154.7C120,149,240,139,360,144C480,149,600,171,720,170.7C840,171,960,149,1080,144C1200,139,1320,149,1380,154.7L1440,160L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
+        <path fill="#b0e68d" height="500" d="M0,96L60,117.3C120,139,240,181,360,192C480,203,600,181,720,149.3C840,117,960,75,1080,58.7C1200,43,1320,53,1380,58.7L1440,64L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
+      </svg> 
+  
+      <!-- Features Section -->
+      <div class="hero-description">
+        <div class="highlight-feature" >
+          <h4>🌬 Fully Air-Conditioned Villa</h4>
+          <p>Experience a comfortable and relaxing stay with fully air-conditioned interiors.</p>
+        </div>
+  
+        <div class="highlight-feature">
+          <h4>🍖 Private BBQ Facilities</h4>
+          <p>Enjoy delicious grilled food with our private BBQ setup available for guests.</p>
+        </div>
+  
+        <div class="highlight-feature">
+          <h4>🚗 Ample VIP Parking for 10-16 Cars</h4>
+          <p>Secure parking space for large groups, ensuring convenience and safety.</p>
+        </div>
+  
+        <div class="highlight-feature">
+          <h4>🔐 Exclusive Stay for VIPs&Executives</h4>
+          <p>A luxurious and private experience tailored for business executives, VIPs, and pilgrims.</p>
+        </div>
+  
+        <div class="highlight-feature">
+          <h4>🙏 Pre-Wedding Programs & Prayers</h4>
+          <p>A serene and elegant setting for pre-wedding events, prayers, and intimate ceremonies.</p>
+        </div>
+  
+        <div class="highlight-feature">
+          <h4>🚗 Car Rental Services</h4>
+          <p>Licensed rent-a-car services available with or without a driver upon early request.</p>
+        </div>
+  
+        <div class="highlight-feature">
+          <h4>🏡 Self-Sufficient Stay</h4>
+          <p>Fully equipped with modern amenities for a comfortable and independent stay.</p>
+        </div>
+  
+        <div class="highlight-feature">
+          <h4>🍲 Nearby Restaurant Deliveries</h4>
+          <p>Delicious meals delivered directly to the villa from nearby restaurants.</p>
+        </div>
+  
+        <div class="highlight-feature">
+          <h4>🚌 Close to Ranni Perumpuzha Bus Stand</h4>
+          <p>Conveniently located within walking distance from the local bus stand.</p>
+        </div>
+      </div>
+      
+    </section>
+
+            <div class="bg-color-and-shapes bgc-black">
+                <div class="bg-lines">
+                    <span></span><span></span>
+                    <span></span><span></span>
+                    <span></span><span></span>
+                    <span></span><span></span>
+                    <span></span><span></span>
+                </div>
+                <div class="wave-shapes"></div>
+                <div class="wave-shapes-two"></div>
+            </div>
+        </div>
+
+
+        <!-- Testimonials Area end -->
+        <div class="gallery-wrapper">
+            <h2 style="color:#61AA4E; padding-top:1px;">Gallery</h2>
+            <div class="main-image-container" style="position: relative;">
+              <button class="nav-button left" onclick="prevImage()">&#10094;</button>
+          
+              <!-- Main Image (not clickable) -->
+              <img id="mainImage" class="main-image" src="assets/images/05.jpg" alt="Gallery Image">
+          
+              <!-- Zoom Icon (only this triggers zoom) -->
+              <a id="zoomLink" href="assets/images/05.jpg" data-gallery="gallery" class="glightbox" style="position: absolute; top: 10px; right: 25px;">
+                <i class="bi bi-zoom-in" style="font-size: 24px; color: white;"></i>
+              </a>
+          
+              <button class="nav-button right" onclick="nextImage()">&#10095;</button>
+            </div>
+          
+            <div class="thumbnail-strip" id="thumbnails">
+              <!-- Thumbnails will be generated here -->
+            </div>
+          </div>
+          
+          <script>
+            const images = [
+              'assets/images/05.jpg',
+              'assets/images/03.jpg',
+              'assets/images/04.jpg',
+              'assets/images/01.jpg',
+              'assets/images/2.jpg',
+               'assets/images/06.jpg',
+            //   'assets/images/IMG_5400.PNG',
+            //   'assets/images/IMG_5401.PNG',
+            //   'assets/images/IMG_5402.PNG',
+            //   'assets/images/IMG_5403.PNG',
+            //   'assets/images/IMG_5404.PNG',
+            //   'assets/images/IMG_5399.PNG',
+            //   'assets/images/IMG_5406.PNG',
+            //   'assets/images/IMG_5407.PNG',
+            //   'assets/images/IMG_5408.PNG',
+            //   'assets/images/IMG_5409.PNG',
+            //   'assets/images/IMG_5410.PNG',
+            //   'assets/images/IMG_5411.PNG',
+            //   'assets/images/IMG_5412.PNG',
+            //   'assets/images/IMG_5414.PNG',
+            //   'assets/images/IMG_5416.PNG',
+            //   'assets/images/IMG_5415.PNG',
+            //   'assets/images/IMG_5418.PNG',
+            //   'assets/images/IMG_5417.PNG',
+            //   'assets/images/IMG_5421.PNG',
+            //   'assets/images/IMG_5424.PNG',
+            //   'assets/images/IMG_5420.PNG',
+            //   'assets/images/IMG_5426.PNG',
+            //   'assets/images/IMG_5419.PNG',
+            //   'assets/images/IMG_5422.PNG',
+            //   'assets/images/IMG_5423.PNG',
+            //   'assets/images/IMG_5425.PNG',
+            ];
+          
+            let currentIndex = 0;
+            const mainImage = document.getElementById('mainImage');
+            const zoomLink = document.getElementById('zoomLink');
+            const thumbnailsContainer = document.getElementById('thumbnails');
+          
+            function updateMainImage(index) {
+              currentIndex = index;
+              mainImage.src = images[index];
+              zoomLink.href = images[index]; // Update the zoom link dynamically
+          
+              document.querySelectorAll('.thumbnail-strip img').forEach((thumb, idx) => {
+                thumb.classList.toggle('active', idx === currentIndex);
+              });
+            }
+          
+            function prevImage() {
+              if (currentIndex > 0) {
+                updateMainImage(currentIndex - 1);
+              }
+            }
+          
+            function nextImage() {
+              if (currentIndex < images.length - 1) {
+                updateMainImage(currentIndex + 1);
+              }
+            }
+          
+            // Generate thumbnails
+            images.forEach((src, index) => {
+              const img = document.createElement('img');
+              img.src = src;
+              img.alt = `Thumbnail ${index + 1}`;
+              img.onclick = () => updateMainImage(index);
+              if (index === 0) img.classList.add('active');
+              thumbnailsContainer.appendChild(img);
+            });
+          
+            updateMainImage(currentIndex);
+          </script>
+          
+          <!-- Include Glightbox -->
+          <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet" />
+          <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+          <script>
+            let lightbox;
+          
+            document.getElementById('zoomLink').addEventListener('click', function (e) {
+              e.preventDefault();
+          
+              // Destroy any existing instance
+              if (lightbox) {
+                lightbox.destroy();
+              }
+          
+              // Create a new lightbox with the current image
+              lightbox = GLightbox({
+                elements: [
+                  {
+                    href: images[currentIndex],
+                    type: 'image'
+                  }
+                ]
+              });
+          
+              lightbox.open();
+            });
+          </script>
+          
+          
+          
+
+        <!-- Blog Area start -->
+
+       
+
+        <!-- Blog Area end -->
+        <section class="tariff-details">
+            <div class="container">
+                <h3 style="color:#61AA4E">💰 Tariff Details</h3>
+                <p>(Rates are per night and subject to availability & seasonal demand.)</p>
+                <p>
+    🏡 Entire Villa Rental <br>(Ideal for families,business stays,and vacation groups)<br>
+    📅 Weekdays (Monday – Thursday): <br><span style="margin-left: 21px;"> ₹12,000/- per night</span><br>
+    🏖️ Weekends (Friday – Sunday): <br><span style="margin-left: 21px;">₹14,000/- per night</span><br>
+    🎉 Peak Season & Holidays: <br><span style="margin-left: 21px;"> ₹16,000/- per night</span>
+</p>
+
+                <hr>
+
+                <h3 style="color:#61AA4E">🛏 Accommodation Details</h3>
+                <p>🏠 4 Deluxe AC Rooms <br><span style="margin-left: 21px;">(6 adults & 6 kids) </span><br> 🚗 1 Non-AC Room <br><span style="margin-left: 21px;"> (Ideal for drivers & assistants) </span><br> 👤
+                    Extra Adults:<br><span style="margin-left: 21px;">₹1,000/day per person </span><br> 👶 Extra Kids (8+ years): <br> <span style="margin-left: 21px;">₹500/day per child</span></p>
+                <hr>
+
+                <h3 style="color:#61AA4E">🕒 Check-In & Check-Out</h3>
+                <p>⏳ Check-In: 1:00 PM <br> ⏰ Check-Out: 11:00 AM</p>
+                <p>🕔 Early Check-In: <br><span style="margin-left: 21px;">After 6:00 AM – ₹500 extra</span> <br><span style="margin-left: 21px;">(subject to availability)</span> <br><span style="margin-left: 21px;"> Before 6:00 AM – Full room
+                    rent applies</span></p>
+                <hr>
+
+                <h3 style="color:#61AA4E">📜 Policies</h3>
+                <p>❌ Unmarried couples are not allowed <br> 🆔 Valid ID proof required for all guests <br> 🍽 EP Basis – No
+                    breakfast included</p>
+                <hr>
+
+                <h3 style="color:#61AA4E">🔐 Booking Confirmation</h3>
+                <p>💳 To confirm your stay, kindly remit an advance payment via bank transfer, PhonePe, or GPay.</p>
+                <p>❗ Important: Funds should only be transferred after receiving the official QR code from us.</p>
+            </div>
+        </section>
+<style>
+ .tariff-details {
+    display: flex;
+    justify-content: center;
+    text-align: left; /* or center if you want the text centered too */
+}
+
+.tariff-details .container {
+    max-width: 1000px; /* or whatever width you prefer */
+    width: 120%;
+    padding: 15px;
+}
+ 
+
+
+</style>
+
+        <!-- Instagram Area start -->
+        <!-- <section class="instagram-area">
+            <div class="instagram-item wow fadeInUp delay-0-2s">
+                <a class="instagram-gallery" href="assets/images/instagrams/instagram1.jpg">
+                    <img src="assets/images/instagrams/instagram1.jpg" alt="instagram">
+                </a>
+            </div>
+            <div class="instagram-item wow fadeInUp delay-0-3s">
+                <a class="instagram-gallery" href="assets/images/instagrams/instagram2.jpg">
+                    <img src="assets/images/instagrams/instagram2.jpg" alt="instagram">
+                </a>
+            </div>
+            <div class="instagram-item wow fadeInUp delay-0-4s">
+                <div class="content text-white">
+                    <div class="icon"><i class="fab fa-instagram"></i></div>
+                    <h2><a href="https://www.instagram.com">Follow Our Instagram</a></h2>
+                    <hr>
+                    <div class="call-text">Make A Call</div>
+                    <a class="h2" href="callto:+000(123)45688">+000 (123) 456 88</a>
+                </div>
+            </div>
+            <div class="instagram-item wow fadeInUp delay-0-5s">
+                <a class="instagram-gallery" href="assets/images/instagrams/instagram3.jpg">
+                    <img src="assets/images/instagrams/instagram3.jpg" alt="instagram">
+                </a>
+            </div>
+            <div class="instagram-item wow fadeInUp delay-0-6s">
+                <a class="instagram-gallery" href="assets/images/instagrams/instagram4.jpg">
+                    <img src="assets/images/instagrams/instagram4.jpg" alt="instagram">
+                </a>
+            </div>
+        </section> -->
+        <!-- Instagram Area end -->
+<!-- YouTube Videos Section -->
+<div class="container my-5">
+    <div class="text-center py-2 mb-4" style="background: linear-gradient(to right,#61AA4E, #D2B48C ); color:white; border-radius: 15px;">
+        <h4 class="mb-0" style="color: #fff;">Nearest Attractions</h4>
+    </div>
+
+    <div class="row">
+        <!-- Edakkal Caves -->
+        <div class="col-md-4 mb-4">
+            <div class="p-3 border rounded">
+                <h5 class="mb-3" style="text-align: center; color: #772b21;">Gavi</h5>
+                <div class="ratio ratio-16x9 mb-3">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/YZIvuAFXNDg?si=KykCmsWMR8IkS3fb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+               <p>
+                Tucked within the Periyar Tiger Reserve, Gavi is a hidden eco-tourism haven known for misty forests, calm lakes, and exotic wildlife. Perfect for birdwatching, trekking, and nature lovers seeking peace and untouched wilderness.
+                 <br>📍 From Ranni: ~70 km | 2 hours
+               </p>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="p-3 border rounded">
+                <h5 class="mb-3" style="text-align: center; color: #772b21;">Konni Elephant Training Centre </h5>
+                <div class="ratio ratio-16x9 mb-3">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/FTJnhl96E60?si=gY16UVDCun8k0Swt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                   
+                </div>
+               <p>
+                This heritage center lets visitors observe and interact with elephants in a natural setting. Learn about traditional training practices, enjoy forest walks, and experience the cultural importance of elephants in Kerala’s history.
+                <br>📍 From Ranni: ~30 km | 45 minutes
+               </p>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="p-3 border rounded">
+                <h5 class="mb-3" style="text-align: center; color: #772b21;">Perunthenaruvi Waterfalls</h5>
+                <div class="ratio ratio-16x9 mb-3">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/gaHlIC9wd20?si=3l9Ytp2T6-3IZAQq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+               <p>
+                A scenic cascade on the Pamba River, Perunthenaruvi offers natural rock formations, lush greenery, and a relaxing ambiance. Ideal for quiet getaways, picnics, and clicking memorable nature shots.
+                <br>📍 From Ranni: ~15 km | 30 minutes
+               </p>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="p-3 border rounded">
+                <h5 class="mb-3" style="text-align: center; color: #772b21;">Kakki Reservoir</h5>
+                <div class="ratio ratio-16x9 mb-3">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/R5Xo-GBeUjw?si=xPvKy2FLyskPc5fx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+               <p>
+                Located inside dense forest, Kakki is a serene reservoir known for boating and wildlife sightings. A peaceful retreat where you can unwind surrounded by the beauty of nature and tall, green hills.
+                <br>📍 From Ranni: ~45 km | 1.5 hours
+            </p>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="p-3 border rounded">
+                <h5 class="mb-3" style="text-align: center; color: #772b21;">Aranmula (Heritage Village & Boat Race)</h5>
+                <div class="ratio ratio-16x9 mb-3">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ITvrMlC9XLo?si=kAERsjt6iRX-N1jQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+               <p>
+                Home to the famed snake boat race and Aranmula Kannadi (metal mirrors), this riverside village blends heritage, spiritual vibes, and traditional craftsmanship in one vibrant cultural package.
+                <br>📍 From Ranni: ~25 km | 45 minutes
+               </p>
+            </div>
+        </div>   
+        <div class="col-md-4 mb-4">
+            <div class="p-3 border rounded">
+                <h5 class="mb-3" style="text-align: center; color: #772b21;">Kuttikkanam</h5>
+                <div class="ratio ratio-16x9 mb-3">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Y59BMhNhhs0?si=Ker2D1tHWnGjGPH6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+               <p>
+                A picturesque hill town with tea gardens, pine forests, and cool air. Ideal for refreshing retreats, scenic drives, and short hikes along rolling green hills and mist-kissed paths.
+                <br>📍 From Ranni: ~55 km | 1.5 hours
+               </p>
+            </div>
+        </div>   
+        <div class="col-md-4 mb-4">
+            <div class="p-3 border rounded">
+                <h5 class="mb-3" style="text-align: center; color: #772b21;">Thekkady</h5>
+                <div class="ratio ratio-16x9 mb-3">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/xN7kq4qavC0?si=2FdLf2ADch0RZyiH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+               <p>
+                A wildlife-rich paradise offering boat safaris, spice plantations, and trekking trails. Spot elephants, bison, and more in the Periyar Tiger Reserve while breathing in the crisp mountain air.
+            <br> 📍 From Ranni: ~90 km | 2.5 hours
+               </p>
+            </div>
+        </div>   
+        <div class="col-md-4 mb-4">
+            <div class="p-3 border rounded">
+                <h5 class="mb-3" style="text-align: center; color: #772b21;">Adavi Ecotourism & Kottavanchi Savari</h5>
+                <div class="ratio ratio-16x9 mb-3">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/x-UIEoHo8qs?si=0Pki5ve6w1WE9ElB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+               <p>
+                Famous for bamboo rafting on the Kallar River, Adavi is a quiet forest spot perfect for nature lovers and families seeking a relaxing and rustic escape.
+            <br>📍 From Ranni: ~27.7 km | 43 minutes
+               </p>
+            </div>
+        </div>   
+        <div class="col-md-4 mb-4">
+            <div class="p-3 border rounded">
+                <h5 class="mb-3" style="text-align: center; color: #772b21;">Vagamon</h5>
+                <div class="ratio ratio-16x9 mb-3">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/7HRISdbZ-lY?si=Dx2dgM6hFvRKA6ub" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+               <p>
+                Misty meadows, pine valleys, and green tea estates define Vagamon. A calm hill station that offers adventure sports, romantic scenery, and a break from the lowland heat.
+               <br>📍 From Ranni: ~67.5 km | 1 hour 53 minutes
+               </p>
+            </div>
+        </div>   
+        <div class="col-md-4 mb-4">
+            <div class="p-3 border rounded">
+                <h5 class="mb-3" style="text-align: center; color: #772b21;">Thenmala Ecotourism</h5>
+                <div class="ratio ratio-16x9 mb-3">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/hW3Stl3LdCs?si=ZEOyj7JBxI0v4eXY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+               <p>
+                India’s first planned eco-tourism site featuring canopy walks, boating, adventure zones, and music fountains. A great mix of nature, fun, and light thrill.
+               <br>📍 From Ranni: ~80 km | 2 hours
+               </p>
+            </div>
+        </div>   
+        <div class="col-md-4 mb-4">
+            <div class="p-3 border rounded">
+                <h5 class="mb-3" style="text-align: center; color: #772b21;">Shendurney Wildlife Sanctuary</h5>
+                <div class="ratio ratio-16x9 mb-3">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Gfz5zkuX4rA?si=n5LXuEiD5MhbvyK2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+               <p>
+                A biodiversity hotspot near Thenmala, this forest sanctuary is home to rare flora and fauna. Explore forest trails, boat across reservoirs, and enjoy the raw beauty of nature.
+               <br>📍 From Ranni: ~85 km | 2 hours
+               </p>
+            </div>
+        </div>   
+        <div class="col-md-4 mb-4">
+            <div class="p-3 border rounded">
+                <h5 class="mb-3" style="text-align: center; color: #772b21;">Neendakara Fishing Harbor</h5>
+                <div class="ratio ratio-16x9 mb-3">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/buN9Fc_jLQs?si=1B8lSRQj9d9QTIt6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+               <p>
+                A vibrant fishing village near Kollam. Watch the daily catch arrive, stroll the pier, or enjoy seafood at local eateries while soaking in coastal charm.
+                <br>📍 From Ranni: ~105 km | 2.5 hours
+               </p>
+            </div>
+        </div>   
+        <div class="col-md-4 mb-4">
+            <div class="p-3 border rounded">
+                <h5 class="mb-3" style="text-align: center; color: #772b21;">Paippad Puthenpalli Church</h5>
+                <div class="ratio ratio-16x9 mb-3">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/_yhVnvw2IG0?si=t7dh0DS-ycCN21Bx"  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+               <p>
+                A serene Roman Catholic church nestled in the heart of Paippad, known for its graceful architecture and peaceful surroundings. It serves as a spiritual haven for the local community and visitors alike.
+               <br> 📍 From Ranni: ~30 km | ~46 minutes​
+            </p>
+            </div>
+        </div>   
+        <div class="col-md-4 mb-4">
+            <div class="p-3 border rounded">
+                <h5 class="mb-3" style="text-align: center; color: #772b21;">Manjinikkara Church</h5>
+                <div class="ratio ratio-16x9 mb-3">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/vRih_MLR3pw?si=tq3J8_utn-xF2oYJ"  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+               <p>
+                A revered Syrian Christian pilgrimage site atop a hill, known for the tomb of Patriarch Ignatius Elias III. The church draws thousands during its annual feast and offers panoramic views of the surrounding hills.
+<br>📍 From Ranni: ~13 km | ~30 minutes
+            </p>
+            </div>
+        </div> 
+        <div class="col-md-4 mb-4">
+            <div class="p-3 border rounded">
+                <h5 class="mb-3" style="text-align: center; color: #772b21;">Veli Tourist Village</h5>
+                <div class="ratio ratio-16x9 mb-3">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/aM3NnbiZfn4?si=n7_Bp03ZQNR3MCCa"  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+               <p>
+                A scenic waterfront destination where the Veli Lake meets the Arabian Sea, offering pedal boating, floating cafés, and landscaped gardens ideal for family picnics and serene walks.
+<br>📍 From Ranni: ~120 km | ~3–3.5 hours
+            </p>
+            </div>
+        </div>   
+    </div>
+</div>
+
+
+        <!-- footer area start -->
+        <footer class="main-footer bgc-black-with-lighting pt-100 rel z-1" style="background-color:#C2EC9F;">
+            <div class="container">
+                <div class="row justify-content-xl-between justify-content-between">
+                    <div class="col-xl-3 col-lg-5 col-sm-6">
+                        <div class="footer-widget widget_about wow fadeInUp delay-0-2s">
+                            <div class="footer-logo mb-25">
+                                <a href="index.html"><img src="assets/images/meadows.png" alt="Logo"></a>
+                            </div>
+                            <p style="color:black;">A premium fully furnished serviced villa, offering a private and luxurious stay for VIP guests,
+                                business executives, and pilgrims traveling to Sabarimala.</p>
+                            <div class="social-style-one pt-10">
+                                <a href="https://www.instagram.com/themeadowsvilla?igsh=YW55NjR4bHZkYXVh" target="_blank">
+                                    <i class="fab fa-instagram"></i>
+                                  </a>
+                                  
+                                  <a href="https://wa.me/7293516434" target="_blank">
+                                    <i class="fab fa-whatsapp"></i>
+                                  </a>
+                                  
+                                  <a href="mailto:info@themeadowsvilla.com" target="_blank">
+                                    <i class="fas fa-envelope"></i>
+                                  </a>
+                                  
+                                  <a href="https://www.facebook.com/share/154N7K439Q/?mibextid=wwXIfr" target="_blank">
+                                    <i class="fab fa-facebook-f"></i>
+                                  </a> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-sm-6">
+                        <div class="footer-widget widget_nav_menu wow fadeInUp delay-0-4s" style="color: #000000;">
+                            <h4 class="footer-title" style="color: #000000;">Quick Links</h4>
+                            <ul class="list-style-one" style="color: #000000;">
+                                <li><a href="index.html" style="color: #000000;">Home</a></li>
+                                <li><a href="about.html" style="color: #000000;">About</a></li>
+                                
+                                <li><a href="near.html" style="color: #000000;">Nearby Attractions</a></li>
+                                <li><a href="contact.html" style="color: #000000;">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-sm-6">
+                        <div class="footer-widget widget_nav_menu wow fadeInUp delay-0-4s">
+                            <h4 class="footer-title" style="color: #000000;">Features</h4>
+                            <ul class="list-style-one">
+                                <li><a href="" style="color: #000000;">Private Garden & Outdoor Seating</a></li>
+                                <li><a href="" style="color: #000000;">Secure & Peaceful Environment</a></li>
+                                <li><a href="" style="color: #000000;">Fully Air-Conditioned Villa</a></li>
+                                <li><a href="" style="color: #000000;">Nearby Restaurant Deliveries</a></li>
+                                <li><a href="" style="color: #000000;">Ample VIP Parking for 10-16 Cars</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <style>
+              
+
+ 
+            </style>
+            <div class="footer-bottom bgd-dark mt-40 pt-20 pb-5 rpt-25" style="background-color: #C2EC9F;">
+                <div class="container">
+                   <div class="row">
+                       <div class="col-lg-6">
+                            <div class="copyright-text">
+                                <p style="color: #000000;">Designed By<a href="">   Cognetz</a></p>
+                            </div>
+                       </div>
+                       
+                   </div>
+                </div>
+            </div>
+            <div class="bg-lines">
+               <span></span><span></span>
+               <span></span><span></span>
+               <span></span><span></span>
+               <span></span><span></span>
+               <span></span><span></span>
+            </div>
+            <div class="wave-shapes"></div>
+            <div class="wave-shapes-two"></div>
+        </footer>
+        <!-- footer area end -->
+
+
+        <!-- Scroll Top Button -->
+        <button class="scroll-top scroll-to-target" data-target="html"><span
+                class="fas fa-angle-double-up"></span></button>
+
+    </div>
+    <!--End pagewrapper-->
+
+
+    <!-- Jquery -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- Appear Js -->
+    <script src="assets/js/appear.min.js"></script>
+    <!-- Slick -->
+    <script src="assets/js/slick.min.js"></script>
+    <!-- Magnific Popup -->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <!-- Nice Select -->
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <!-- Image Loader -->
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <!-- Calendar -->
+    <script src="assets/js/calendar.global.min.js"></script>
+    <!-- Circle Progress -->
+    <script src="assets/js/circle-progress.min.js"></script>
+    <!-- Isotope -->
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <!--  WOW Animation -->
+    <script src="assets/js/wow.min.js"></script>
+    <!-- Custom script -->
+    <script src="assets/js/script.js"></script>
+    <script>
+        function toggleDropdown() {
+            var dropdown = document.getElementById("dropdownMenu");
+            dropdown.style.display = (dropdown.style.display === "block") ? "none" : "block";
+        }
+    
+        function updateSelection() {
+            var checkboxes = document.querySelectorAll(".dropdown-content input[type='checkbox']");
+            var selectedRooms = [];
+            checkboxes.forEach(function(checkbox) {
+                if (checkbox.checked) {
+                    selectedRooms.push(checkbox.value);
+                }
+            });
+            document.querySelector(".dropdown-btn").innerText = selectedRooms.length > 0 ? selectedRooms.join(", ") : "Select Rooms";
+        }
+    
+        // Close dropdown if clicked outside
+        document.addEventListener("click", function(event) {
+            var dropdown = document.querySelector(".dropdown");
+            if (!dropdown.contains(event.target)) {
+                document.getElementById("dropdownMenu").style.display = "none";
+            }
+        });
+    </script>
+    <script>
+        document.getElementById("appointmentForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent actual form submission
+            
+            // Display success message
+            document.getElementById("successMessage").style.display = "block";
+            
+            // Clear form fields
+            this.reset();
+    
+            // Optionally hide the message after a few seconds
+            setTimeout(() => {
+                document.getElementById("successMessage").style.display = "none";
+            }, 5000);
+        });
+    </script>
+</body>
+
+</html>
