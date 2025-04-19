@@ -3931,10 +3931,10 @@ h6, .h6 {
   border-radius: 0 500px 0 0;
   -webkit-animation: leftRightOne 22s infinite;
   animation: leftRightOne 22s infinite;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(13.33%, rgba(171, 96, 52, 0)), to(rgba(171, 96, 52, 0.2)));
-  background: -webkit-linear-gradient(top, rgba(171, 96, 52, 0) 13.33%, rgba(171, 96, 52, 0.2) 100%);
-  background: -o-linear-gradient(top, rgba(171, 96, 52, 0) 13.33%, rgba(171, 96, 52, 0.2) 100%);
-  background: linear-gradient(180deg, rgba(171, 96, 52, 0) 13.33%, rgba(171, 96, 52, 0.2) 100%); }
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(13.33%, rgba(171, 96, 52, 0)), to(rgba(25, 187, 66, 0.2)));
+  background: -webkit-linear-gradient(top, rgba(171, 96, 52, 0) 13.33%, rgba(6, 245, 58, 0.2) 100%);
+  background: -o-linear-gradient(top, rgba(171, 96, 52, 0) 13.33%, rgba(48, 177, 22, 0.2) 100%);
+  background: linear-gradient(180deg, rgba(171, 96, 52, 0) 13.33%, rgba(24, 160, 12, 0.2) 100%); }
   @media only screen and (max-width: 1399px) {
     .slider-shapes:before {
       width: 262px;
@@ -3953,10 +3953,10 @@ h6, .h6 {
   animation: leftRightOne 22s infinite;
   -webkit-animation-delay: 1s;
   animation-delay: 1s;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(13.33%, rgba(171, 96, 52, 0)), to(rgba(171, 96, 52, 0.2)));
-  background: -webkit-linear-gradient(top, rgba(171, 96, 52, 0) 13.33%, rgba(171, 96, 52, 0.2) 100%);
-  background: -o-linear-gradient(top, rgba(171, 96, 52, 0) 13.33%, rgba(171, 96, 52, 0.2) 100%);
-  background: linear-gradient(180deg, rgba(171, 96, 52, 0) 13.33%, rgba(171, 96, 52, 0.2) 100%); }
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(13.33%, rgba(171, 96, 52, 0)), to(#95CF7A));
+  background: -webkit-linear-gradient(top, rgba(171, 96, 52, 0) 13.33%,#95CF7A) 100%;
+  background: -o-linear-gradient(top, rgba(171, 96, 52, 0) 13.33%, #95CF7A 100%);
+  background: linear-gradient(180deg, rgba(171, 96, 52, 0) 13.33%, #95CF7A 100%); }
   @media only screen and (max-width: 1399px) {
     .slider-shapes:after {
       width: 222px;
